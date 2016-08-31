@@ -97,9 +97,8 @@
           }
         });
         modelCtrl.$render = function() {
-          if (modelCtrl.$modelValue && modelCtrl.$modelValue.startDate) {
-            _setStartDate(modelCtrl.$modelValue.startDate);
-            _setEndDate(modelCtrl.$modelValue.endDate);
+          if (modelCtrl.$modelValue && modelCtrl.$modelValue.startDate && modelCtrl.$modelValue.endDate) {
+
           } else {
             _clear();
           }
